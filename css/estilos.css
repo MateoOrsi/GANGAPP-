@@ -347,6 +347,68 @@ header {
 .i-6 {
   grid-area: i-6; }
 
+/*-------QUIENES SOMOS----------*/
+.subgrupo ul {
+  padding-left: 0px !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important; }
+  .subgrupo ul li {
+    margin-bottom: 35px; }
+
+.clasificadores {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-sizing: border-box; }
+  .clasificadores .clasificador {
+    background-color: #041429;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #fc6736;
+    height: auto;
+    width: 400px;
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px; }
+    .clasificadores .clasificador h3 {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #fc6736;
+      font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+      font-size: 45px !important;
+      font-weight: 600 !important; }
+    .clasificadores .clasificador h4 {
+      text-align: center;
+      color: white;
+      align-items: center; }
+
+/*----ARTICULOS----*/
+.articulo {
+  background-color: #041429;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .articulo h2 {
+    color: #fc6736;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    font-weight: 600; }
+  .articulo p {
+    line-height: 3;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 15px;
+    font-weight: 400; }
+
 footer {
   background-color: #041429;
   height: auto;
@@ -465,7 +527,13 @@ footer {
   .texto-1 {
     display: none; }
   .texto-2 {
-    display: none; } }
+    display: none; }
+  h3 {
+    font-size: 20px !important; }
+  .clasificador h3 {
+    font-size: 30px !important; }
+  ul li {
+    list-style: none; } }
 
 @media screen and (max-width: 400px) {
   h1 {
@@ -476,5 +544,7 @@ footer {
     font-size: 25px !important; }
   h3 {
     font-size: 10px; }
+  .clasificador h3 {
+    font-size: 20px !important; }
   .contacto div div h2 {
     font-size: 18px !important; } }
