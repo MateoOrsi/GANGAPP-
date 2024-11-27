@@ -392,6 +392,8 @@ header {
 .articulo {
   background-color: #041429;
   border-radius: 10px;
+  border-style: solid;
+  border-color: #fc6736;
   padding: 1.5rem;
   margin: 1rem;
   margin-bottom: 2rem;
@@ -408,6 +410,74 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     font-size: 15px;
     font-weight: 400; }
+  .articulo H4 {
+    color: white; }
+
+.circulos {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  .circulos h2 {
+    color: #fc6736;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center; }
+  .circulos .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto; }
+    @media (max-width: 768px) {
+      .circulos .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px; } }
+    @media (max-width: 480px) {
+      .circulos .container {
+        grid-template-columns: 1fr;
+        gap: 10px; } }
+  .circulos .circle {
+    text-align: center; }
+    .circulos .circle img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ccc;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      height: 400px;
+      width: 400px; }
+      @media (max-width: 768px) {
+        .circulos .circle img {
+          width: 120px;
+          height: 120px; } }
+      @media (max-width: 480px) {
+        .circulos .circle img {
+          width: 100px;
+          height: 100px; } }
+    .circulos .circle h2 {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333; }
+      @media (max-width: 768px) {
+        .circulos .circle h2 {
+          font-size: 14px; } }
+      @media (max-width: 480px) {
+        .circulos .circle h2 {
+          font-size: 12px; } }
+
+.contrato {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contrato h2 {
+    color: #fc6736;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center; }
 
 footer {
   background-color: #041429;

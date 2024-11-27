@@ -389,6 +389,7 @@
         padding-left: 0px !important;
         margin-left: 5px !important;
         margin-right: 5px !important;
+
         li {
             margin-bottom: 35px;
         }
@@ -400,6 +401,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     box-sizing: border-box;
+
     .clasificador {
         background-color: $color-secundario;
         display: flex;
@@ -415,6 +417,7 @@
         margin-left: 15px;
         margin-right: 15px;
         padding-bottom: 10px;
+
         h3 {
             display: inline-block;
             text-align: center;
@@ -424,7 +427,8 @@
             font-size: 45px !important;
             font-weight: 600 !important;
         }
-        h4{
+
+        h4 {
             text-align: center;
             color: white;
             align-items: center;
@@ -435,24 +439,114 @@
 /*----ARTICULOS----*/
 
 .articulo {
-    background-color:  $color-secundario;
+    background-color: $color-secundario;
     border-radius: 10px;
+    border-style: solid;
+    border-color: $color-principal;
     padding: 1.5rem;
     margin: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
     h2 {
         color: $color-principal ;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 45px;
         font-weight: 600;
     }
+
     p {
         line-height: 3;
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif !important;
         font-size: 15px;
         font-weight: 400;
+    }
+
+    H4 {
+        color: white;
+    }
+}
+
+.circulos {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    h2 {
+        color: $color-principal ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 45px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $gap;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr); // Cambiar a 2 columnas en pantallas medianas
+            gap: 15px;
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr; // Cambiar a 1 columna en pantallas pequeñas
+            gap: 10px;
+        }
+    }
+
+    .circle {
+        text-align: center;
+
+        img {
+            width: $circle-size;
+            height: $circle-size;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            width: 400px;
+
+            @media (max-width: 768px) {
+                width: 120px; // Reducir tamaño del círculo en pantallas medianas
+                height: 120px;
+            }
+
+            @media (max-width: 480px) {
+                width: 100px; // Reducir aún más en pantallas pequeñas
+                height: 100px;
+            }
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+
+            @media (max-width: 768px) {
+                font-size: 14px; // Reducir tamaño del texto en pantallas medianas
+            }
+
+            @media (max-width: 480px) {
+                font-size: 12px; // Reducir aún más en pantallas pequeñas
+            }
+        }
+    }
+}
+.contrato{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $color-principal ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 45px;
+        font-weight: 600;
+        text-align: center;
     }
 }
